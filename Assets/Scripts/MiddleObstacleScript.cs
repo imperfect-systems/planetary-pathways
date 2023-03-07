@@ -10,8 +10,9 @@ public class MiddleObstacleScript : MonoBehaviour
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision){
-        if(collision.gameObject.layer == 3){
+    private void OnTriggerExit2D(Collider2D collision){
+       
+        if(collision.gameObject.GetComponent<ShipScript>().shipIsAlive && collision.gameObject.layer == 3){
             logic.addScore(1);
         }
     }
