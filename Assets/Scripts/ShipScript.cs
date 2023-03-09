@@ -29,9 +29,7 @@ public class ShipScript : MonoBehaviour
     public void Thrust(){
         if(shipIsAlive){
             shipRigidBody.velocity = Vector2.up * thrustPower;
-            if(!thruster.isPlaying){
-                thruster.Play();
-            }
+            thruster.Play();
         }
     }
     
