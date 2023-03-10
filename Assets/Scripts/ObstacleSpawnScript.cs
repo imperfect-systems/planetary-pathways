@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class ObstacleSpawnScript : MonoBehaviour
 {
-    public GameObject obstacle;
-    public float spawnRate = 2;
-    private float timer;
-    public float heightOffset = 5;
+    [SerializeField]
+    private GameObject obstacle;
 
-    // Start is called before the first frame update
+    [SerializeField]
+    private float spawnRate = 2;
+
+    [SerializeField]
+    private float heightOffset = 5;
+
+    private float timer;
+
     void Start()
     {
         spawnObstacle();

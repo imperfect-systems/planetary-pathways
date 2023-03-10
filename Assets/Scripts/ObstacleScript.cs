@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class ObstacleScript : MonoBehaviour
 {
-    public float movementSpeed = 5;
-    public float deadZone = -45;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private float movementSpeed = 5;
+    
+    [SerializeField]
+    private float deadZone = -45;
 
-    // Update is called once per frame
     void Update()
     {
         transform.position += (Vector3.left * movementSpeed) * Time.deltaTime;

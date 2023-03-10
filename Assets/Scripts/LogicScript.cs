@@ -6,9 +6,13 @@ using TMPro;
 
 public class LogicScript : MonoBehaviour
 {
-    public int playerScore = 0;
-    public TextMeshPro scoreText;
-    public GameObject gameOverScreen;
+    private int playerScore = 0;
+
+    [SerializeField]
+    private TextMeshPro scoreText;
+
+    [SerializeField]
+    private GameObject gameOverScreen;
 
     public void addScore(int scoreToAdd){
         playerScore += scoreToAdd;

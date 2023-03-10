@@ -15,13 +15,11 @@ public class ShipScript : MonoBehaviour
     [SerializeField]
     private float thrustPower = 10;
 
+    // TODO: make this private when the obstacle passed event has been implemented
     public bool shipIsAlive = true;
 
-    public LogicScript logic;
+    private LogicScript logic;
     
-    
-    
-
     void Start(){
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
