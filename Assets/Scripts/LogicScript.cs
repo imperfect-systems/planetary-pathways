@@ -14,6 +14,9 @@ public class LogicScript : MonoBehaviour
     [SerializeField]
     private GameObject gameOverScreen;
 
+    [SerializeField]
+    private ParticleSystem explosion;
+
     public void addScore(int scoreToAdd){
         playerScore += scoreToAdd;
         scoreText.text = playerScore.ToString();
