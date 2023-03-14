@@ -26,7 +26,18 @@ public class LogicScript : MonoBehaviour
         gameOverScreen.SetActive(true);
     }
 
+    public void loadScene(string name){
+        SceneManager.LoadScene(name);
+    }
+    
     public void restartScene(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void quitGame(){
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+        Application.Quit();
     }
 }
