@@ -28,6 +28,7 @@ public class ShipScript : MonoBehaviour
     
     void Start(){
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+        
     }
 
     void Update()
