@@ -9,28 +9,23 @@ public class LogicScript : MonoBehaviour
 {
     private int playerScore = 0;
 
-    [SerializeField]
-    private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI scoreText;
 
-    [SerializeField]
-    private GameObject gameOverScreen;
+    [SerializeField] private GameObject gameOverScreen;
 
-    [SerializeField]
-    private GameObject tutorialScreen;
+    [SerializeField] private GameObject tutorialScreen;
 
-    [SerializeField]
-    private TextMeshProUGUI tutorialScreenText;
+    [SerializeField] private TextMeshProUGUI tutorialScreenText;
 
-    [SerializeField]
-    private ParticleSystem explosion;
+    [SerializeField] private ParticleSystem explosion;
 
-    [SerializeField]
-    private InputActionReference thrustAction;
+    [SerializeField] private InputActionReference thrustAction;
 
     public void Start(){
-        pauseGame();
-        string thrustActionLabel = thrustAction.action.GetBindingDisplayString();
-        tutorialScreenText.text = $"Press {thrustActionLabel} to activate thrusters";
+        if(tutorialScreen){
+            pauseGame();
+            showTutorial();
+        }
     }
 
     public void pauseGame(){
@@ -50,6 +45,10 @@ public class LogicScript : MonoBehaviour
         gameOverScreen.SetActive(true);
     }
 
+    public void showTutorial(){
+        string labelText = $"Press {thrustAction.action.GetBindingDisplayString()} to activate thrusters";
+        tutorialScreenText.text = labelText;
+    }
     public void dismissTutorial(){
         tutorialScreen.SetActive(false);
         unPauseGame();

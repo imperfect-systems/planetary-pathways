@@ -6,20 +6,18 @@ using UnityEngine.InputSystem;
 public class ShipScript : MonoBehaviour
 {
 
-    [SerializeField]
-    private Rigidbody2D shipRigidBody;
+    [SerializeField] private Rigidbody2D shipRigidBody;
 
-    [SerializeField]
-    private Camera mainCamera;
+    [SerializeField] private Camera mainCamera;
 
-    [SerializeField]
-    private ParticleSystem thruster;
+    [SerializeField] private ParticleSystem thruster;
 
-    [SerializeField]
-    private ParticleSystem explosion;
+    [SerializeField] private AudioSource thrusterSound;
 
-    [SerializeField]
-    private float thrustPower = 10;
+    [SerializeField] private ParticleSystem explosion;
+    [SerializeField] private AudioSource explosionSound;
+
+    [SerializeField] private float thrustPower = 10;
 
     // TODO: make this private when the obstacle passed event has been implemented
     public bool shipIsAlive = true;
@@ -42,6 +40,7 @@ public class ShipScript : MonoBehaviour
         if(shipIsAlive){
             shipRigidBody.velocity = Vector2.up * thrustPower;
             thruster.Play();
+            thrusterSound.Play();
         }
     }
     
@@ -49,6 +48,7 @@ public class ShipScript : MonoBehaviour
         shipIsAlive = false;
         explosion.transform.position = transform.position;
         explosion.Play();
+        explosionSound.Play();
         Destroy(gameObject);
         logic.gameOver();
     }
