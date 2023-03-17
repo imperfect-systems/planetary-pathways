@@ -670,14 +670,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 616246010}
         m_TargetAssemblyTypeName: LogicScript, Assembly-CSharp
-        m_MethodName: loadScene
+        m_MethodName: loadStage
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage
+          m_StringArgument: desert
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &232990872
@@ -813,7 +813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &379412502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1563,14 +1563,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 616246010}
         m_TargetAssemblyTypeName: LogicScript, Assembly-CSharp
-        m_MethodName: loadScene
+        m_MethodName: loadStage
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage
+          m_StringArgument: jungle
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &820082667
@@ -1698,14 +1698,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 616246010}
         m_TargetAssemblyTypeName: LogicScript, Assembly-CSharp
-        m_MethodName: loadScene
+        m_MethodName: loadStage
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage
+          m_StringArgument: lava
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1090385545
@@ -2427,14 +2427,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 616246010}
         m_TargetAssemblyTypeName: LogicScript, Assembly-CSharp
-        m_MethodName: loadScene
+        m_MethodName: loadStage
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage
+          m_StringArgument: toxic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1486933626
@@ -2562,14 +2562,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 616246010}
         m_TargetAssemblyTypeName: LogicScript, Assembly-CSharp
-        m_MethodName: loadScene
+        m_MethodName: loadStage
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stage
+          m_StringArgument: ice
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1501976146

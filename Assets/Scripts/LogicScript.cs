@@ -54,6 +54,11 @@ public class LogicScript : MonoBehaviour
         unPauseGame();
     }
 
+    public void loadStage(string name){
+        PlayerPrefs.SetString("planet", name);
+        SceneManager.LoadScene("Stage");
+    }
+
     public void loadScene(string name){
         SceneManager.LoadScene(name);
     }

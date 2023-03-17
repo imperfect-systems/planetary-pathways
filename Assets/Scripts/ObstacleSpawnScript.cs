@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class ObstacleSpawnScript : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject obstacle;
+    [SerializeField] private GameObject obstacle;
 
-    [SerializeField]
-    private float spawnRate = 2;
+    [SerializeField] private float spawnRate = 2;
 
-    [SerializeField]
-    private float heightOffset = 5;
+    [SerializeField] private float heightOffset = 5;
 
     private float timer;
 
