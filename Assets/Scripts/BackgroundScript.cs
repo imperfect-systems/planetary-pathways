@@ -10,8 +10,12 @@ public class BackgroundScript : MonoBehaviour
     {
         string stage = PlayerPrefs.GetString("planet");
         string bgPath = $"backgrounds/background-{stage}";
+        string musicPath = $"music/music-{stage}";
         SpriteRenderer spriteRenderer = this.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = Resources.Load<Sprite>(bgPath);
+        AudioSource audioSource = this.GetComponent<AudioSource>();
+        audioSource.clip = Resources.Load<AudioClip>(musicPath);
+        audioSource.Play();
     }
 
     // Update is called once per frame
