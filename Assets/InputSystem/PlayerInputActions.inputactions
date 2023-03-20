@@ -26,6 +26,17 @@
                     "action": "Thrust",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ca7eb3ee-87ba-4182-bc00-5507c3bd5a65",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Thrust",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
