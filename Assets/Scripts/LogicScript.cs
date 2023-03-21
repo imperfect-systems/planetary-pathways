@@ -46,7 +46,7 @@ public class LogicScript : MonoBehaviour
     }
 
     public void showTutorial(){
-        string labelText = $"Press {thrustAction.action.GetBindingDisplayString()} to activate thrusters";
+        string labelText = $"Press {thrustAction.action.GetBindingDisplayString(0)} to activate thrusters";
         tutorialScreenText.text = labelText;
     }
     public void dismissTutorial(){
